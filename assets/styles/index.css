@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f4f4;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(rgba(58, 1, 11, 0.959),rgb(128, 0, 32)),
+    url("") center/cover;
+
+    color:white;
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+header h1{
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+header button{
+    padding:15px 40px;
+
+    border:none;
+    border-radius:50px;
+
+    background:white;
+    color:#800020;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+header button:hover{
+    background:#800020;
+    color:white;
+    transform:scale(1.05);
+}
+
+.produtos{
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:20px;
+
+}
+
+.produto{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.produto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.produto img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+}
+
+.produto h2{
+
+    color:#800020;
+
+    font-size:24px;
+
+    padding:15px 20px 0;
+
+}
+
+.produto p{
+
+    padding:10px 20px;
+
+    color:#666;
+
+}
+
+.produto span{
+
+    display:block;
+
+    padding:0 20px 20px;
+
+    font-size:22px;
+
+    color:#5C0011;
+
+    font-weight:bold;
+
+}
+
+.cep{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:70px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.cep h2{
+
+    color:#800020;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.cep input{
+
+    width:100%;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.cep button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#800020;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.cep button:hover{
+
+    background:#5C0011;
+
+}
+
+
+.contato{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:70px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contato h2{
+
+    color:#800020;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.contato input,
+.contato textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    resize:none;
+
+}
+
+.contato button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#800020;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contato button:hover{
+
+    background:#5C0011;
+
+}
+
+footer{
+
+    background:#5C0011;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    padding:80px 20px;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+.produto img{
+
+    height:300px;
+
+}
+
+}
