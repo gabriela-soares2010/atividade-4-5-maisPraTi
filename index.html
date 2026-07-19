@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AURA 67</title>
+
+    <link rel="stylesheet" href="assets/styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Aura Books</h1>
+
+    <button id="btnColecao">
+        Conheça a Coleção
+    </button>
+
+</header>
+
+<main>
+
+<section class="produtos">
+
+    <div class="produto">
+        <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rbl9-m5uufxlu41a858" alt="Livro">
+        <h2>Pequeno Princípe</h2>
+        <p>O Pequeno Príncipe conta a história de um menino que viaja por diferentes planetas e ensina, com simplicidade, o valor da amizade, do amor e daquilo que realmente importa na vida.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.U0SuKMQ0Tm-EzFzmAo3l1QHaFr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Livro">
+        <h2>It: A Coisa</h2>
+        <p>It: A Coisa conta a história de um grupo de amigos que enfrenta uma entidade maligna capaz de assumir a forma dos maiores medos de suas vítimas, especialmente a do palhaço Pennywise.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://a-static.mlcdn.com.br/800x560/livro-a-hipotese-do-amor-ali-hazelwood/institutobeneficenteboanova/85760/1a2be257a2e64cc53d18db9045d21cb0.jpeg" alt="Livro">
+        <h2>A Hipótese do Amor</h2>
+        <p>A Hipótese do Amor acompanha uma doutoranda que inicia um namoro de mentira com um professor universitário, mas a relação acaba se transformando em um romance verdadeiro.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://th.bing.com/th/id/OIP.QyX_XVMctk_wNjnYftXkpwHaHa?w=219&h=219&c=7&r=0&o=7&pid=1.7&rm=3" alt="Livro">
+        <h2>Verity - Edição de Luxo</h2>
+        <p>Verity acompanha uma escritora contratada para terminar uma série de livros que descobre um manuscrito perturbador, revelando segredos sombrios sobre a vida da autora original.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71sf+k7nCQL.jpg" alt="Livro">
+        <h2>Star Wars: A Trilogia</h2>
+        <p>A trilogia prequel de Star Wars mostra a ascensão de Anakin Skywalker, sua transformação em Darth Vader e a queda da República com o surgimento do Império Galáctico.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://m.media-amazon.com/images/I/71gOCNRA9nL._SY342_.jpg" alt="Livro">
+        <h2>Box Harry Potter</h2>
+        <p>Harry Potter acompanha a jornada de um jovem bruxo que, ao lado de seus amigos, enfrenta o poderoso Lord Voldemort enquanto descobre seu destino no mundo da magia.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://m.media-amazon.com/images/I/81XwVkfKyoL._SY425_.jpg" alt="Livro">
+        <h2>Box Era Uma Vez Um Coração Partido</h2>
+        <p>Era Uma Vez um Coração Partido acompanha Evangeline Fox, que faz um acordo com o enigmático Príncipe de Copas, Jacks, e acaba envolvida em uma jornada repleta de magia, mistérios e escolhas que podem mudar seu destino.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+    <div class="produto">
+        <img src="https://m.media-amazon.com/images/I/616P-wCsTOL._SL1000_.jpg" alt="Livro">
+        <h2>Box de Raphael Montes</h2>
+        <p>O box de Raphael Montes reúne thrillers psicológicos e de suspense com histórias intensas, cheias de mistérios, reviravoltas e crimes que desafiam a percepção do leitor.</p>
+        <span>R$ 67,00</span>
+    </div>
+
+</section>
+
+<section class="cep">
+
+    <h2>Consulte seu CEP</h2>
+
+    <input
+        type="text"
+        id="cep"
+        placeholder="Digite seu CEP"
+        maxlength="8"
+    >
+
+    <button id="buscarCep">
+        Buscar
+    </button>
+
+    <input type="text" id="rua" placeholder="Rua" readonly>
+
+    <input type="text" id="bairro" placeholder="Bairro" readonly>
+
+    <input type="text" id="cidade" placeholder="Cidade" readonly>
+
+    <input type="text" id="uf" placeholder="UF" readonly>
+
+</section>
+
+<section class="contato">
+
+    <h2>Contato</h2>
+
+    <form id="formContato">
+
+        <input
+            type="text"
+            placeholder="Nome"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="E-mail"
+            required
+        >
+
+        <textarea
+            placeholder="Mensagem"
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 Aura 67 Books - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+<script src="assets/script/script.js"></script>
+<script src="assets/script/viaCep.js"></script>
+
+</body>
+</html>
